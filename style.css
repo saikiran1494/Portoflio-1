@@ -1,0 +1,584 @@
+* {
+    padding: 0;
+    margin: 0;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    color: #fff;
+    background-color: black;
+}
+
+/*---------Header---------*/
+#header {
+    width: auto;
+    height: 100vh;
+    background-image: url(images/background.png);
+    background-position: center;
+    background-size: cover;
+}
+nav .fas{
+    display: none;
+}
+
+#header .container {
+    padding: 10px 80px;
+}
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    margin: 0 10px;
+}
+
+.nav-img {
+    width: 120px;
+}
+
+nav ul li {
+    text-decoration: none;
+    display: inline-block;
+    margin: 10px 20px;
+    font-size: 18px;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: #fff;
+    position: relative;
+}
+
+.header-text {
+    margin-top: 20%;
+}
+
+.header-text p {
+    margin: 30px 10px;
+    font-size: 35px;
+}
+
+.header-text h1 {
+    margin: 0 10px;
+    font-size: 60px;
+}
+
+.header-text span {
+    color: #ff004f;
+}
+
+nav ul li a::after {
+    content: '';
+    width: 0;
+    height: 3px;
+    background: #ff004f;
+    left: 0;
+    bottom: -6px;
+    transition: 0.5s;
+    position: absolute;
+}
+
+nav ul li a:hover::after {
+    width: 100%;
+}
+
+
+/*--------about-------*/
+#about .container {
+    background: black;
+    color: #fff;
+    padding: 80px 40px;
+}
+
+.row {
+    display: flex;
+    justify-content: space-between;
+}
+
+.row-col-1 .about-img {
+    width: 400px;
+    border-radius: 15px;
+    margin-left: 50px;
+}
+
+.row-col-2 {
+    padding-left: 40px;
+
+}
+
+.row-col-2 h1 {
+    font-size: 50px;
+    padding-bottom: 10px;
+    color: #ff004f;
+}
+
+.row-col-2 p {
+    font-size: 20px;
+}
+
+.sub-titles {
+    margin: 20px 0 40px;
+    font-weight: 500;
+    display: flex;
+}
+
+.tab-links {
+    margin-right: 40px;
+    cursor: pointer;
+    position: relative;
+}
+
+.tab-links::after {
+    content: '';
+    position: absolute;
+    width: 0;
+    left: 0;
+    bottom: -8px;
+    background: #ff004f;
+    height: 3px;
+    transition: 0.5s;
+}
+
+.tab-links.active-link::after {
+    width: 50%;
+}
+
+#skills {
+    list-style: none;
+    padding: 10px 0;
+    margin-top: -25px;
+}
+
+#skills li span {
+    color: #ff004f;
+}
+
+#skills li {
+    padding: 10px 0;
+    font-size: 15px;
+}
+
+#experience {
+    list-style: none;
+    padding: 10px 0;
+    margin-top: -25px;
+}
+
+#experience li span {
+    color: #ff004f;
+}
+
+#experience li {
+    padding: 10px 0;
+    font-size: 15px;
+}
+
+#education {
+    list-style: none;
+    padding: 10px 0;
+    margin-top: -25px;
+}
+
+#education li span {
+    color: #ff004f;
+}
+
+#education li {
+    padding: 10px 0;
+    font-size: 15px;
+}
+
+.tc {
+    display: none;
+}
+
+.active-tab {
+    display: block;
+}
+
+/*------services------*/
+#services {
+    padding: 80px 40px;
+}
+
+#services .container {
+    padding: 30px 50px;
+    margin-left: 10px;
+}
+
+#services .container .h1 {
+    font-size: 50px;
+    font-weight: 800;
+    margin-bottom: 50px;
+}
+
+.service-list {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    grid-gap: 50px;
+}
+
+.service-list div {
+    border-radius: 15px;
+    background-color: #ababab;
+    padding: 30px 30px;
+    transition: 0.5s;
+}
+
+.service-list div i {
+    font-size: 40px;
+    margin-bottom: 20px;
+}
+
+.service-list div h1 {
+    font-weight: 800;
+    margin-bottom: 20px;
+}
+
+.service-list div a {
+    text-decoration: none;
+    color: #fff;
+    margin-top: 10%;
+}
+
+.service-list div:hover {
+    background-color: #ff004f;
+    transform: translateY(-20px);
+}
+
+/*---------portoflio-----------*/
+
+#portoflio {
+    padding: 80px 40px;
+}
+
+#portoflio .container {
+    padding: 30px 50px;
+    margin-left: 10px;
+}
+
+#portoflio .container h1 {
+    font-size: 50px;
+    font-weight: 800;
+    margin-bottom: 50px;
+}
+
+#portoflio .container .worklist {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    grid-gap: 50px;
+}
+
+#portoflio .container .worklist .work {
+    width: 100%;
+    height: 100%;
+    position: relative;
+    overflow: hidden;
+    border-radius: 15px;
+}
+
+#portoflio .container .worklist .work img {
+    width: 100%;
+    transition: transform 0.5s;
+}
+
+#portoflio .container .worklist .work .layer h2 {
+    font-weight: 700;
+    margin-bottom: 10px;
+}
+
+#portoflio .container .worklist .work .layer p {
+    font-weight: 500;
+    margin-bottom: 10px;
+    padding: 0 50px 0;
+}
+
+#portoflio .container .worklist .work .layer a {
+    border-radius: 50%;
+    background-color: #fff;
+    margin-top: 20px;
+    color: #ff004f;
+    text-decoration: none;
+    font-size: 18px;
+    width: 60px;
+    height: 60px;
+    text-align: center;
+    line-height: 60px;
+}
+
+#portoflio .container .worklist .work .layer {
+    position: absolute;
+    overflow: hidden;
+    border-radius: 15px;
+    width: 100%;
+    height: 0;
+    background: linear-gradient(rgba(0, 0, 0, 0.6), #ff004f);
+    left: 0;
+    bottom: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    justify-content: center;
+    transition: height 0.5s;
+}
+
+#portoflio .container .worklist .work:hover img {
+    transform: scale(1.1);
+}
+
+#portoflio .container .worklist .work:hover .layer {
+    height: 100%;
+}
+
+#portoflio .container .btn {
+    text-align: center;
+    margin: 50px auto;
+    text-decoration: none;
+    background-color: #fff;
+    width: fit-content;
+    padding: 14px 50px;
+    display: block;
+    border-radius: 10px;
+    transition: 0.5s;
+}
+
+#portoflio .container .btn:hover {
+    background-color: #ff004f;
+    color: #fff;
+}
+
+
+/*----------Contact------------*/
+
+
+#contact .container {
+    padding: 70px 90px;
+    margin-left: 10px;
+}
+
+#contact .container .row .left h1 {
+    font-size: 60px;
+    font-weight: 800;
+    margin-bottom: 20px;
+}
+
+#contact .container .row .left p {
+    font-size: 20px;
+}
+
+#contact .container .row .left p i {
+    background-color: black;
+    color: #ff004f;
+    font-size: 20px;
+    padding: 20px 0;
+    padding-right: 10px;
+}
+
+#contact .container .row .left .social-icons i {
+    font-size: 20px;
+    background-color: black;
+    color: #ababab;
+    margin: 10px 13px 50px 0;
+}
+
+#contact .container .row .btn2 {
+    text-decoration: none;
+    background-color: #ff004f;
+    padding: 20px;
+    border-radius: 5px;
+    color: #fff;
+}
+
+form input,
+form textarea {
+    width: 96%;
+    background-color: #ababab;
+    border: 0;
+    padding: 15px;
+    outline: none;
+    font-size: 18px;
+    margin: 15px 0;
+    border-radius: 5px;
+}
+
+#contact .container .row .right .btn3 {
+    background-color: #ff004f;
+    color: #fff;
+    padding: 15px 20px;
+    border: 0;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+#contact .copyright {
+    background-color: #262626;
+    text-align: center;
+    padding: 20px;
+    font-size: 20px;
+    font-weight: bold;
+}
+#contact #msg{
+    color: #fff;
+    font-size: 15px;
+}
+
+@media only screen and (max-width:600px) {
+    #header {
+        background-image: url(images/phone-background.png);
+    }
+    nav .fas{
+        display: none;
+    }
+    #header .container nav ul{
+        display: block;
+
+    }
+    #header .container .header-text{
+        margin-top: 100%;
+        font-size: 16px;
+    }
+    #header .container .header-text h1{
+        font-size: 30px;
+    }
+    nav .fas{
+        display: block;
+        font-size: 25px;
+    }
+    nav ul{
+        background-color: #ff004f;
+        position: absolute;
+        top: 0;
+        right: -200px;
+        width: 200px;
+        height: 100vh;
+        padding-top: 50px;
+        z-index: 2;
+    }
+    nav ul li{
+        display: block;
+        margin:25px;
+    }
+    nav ul .fas{
+        cursor: pointer;
+        position: absolute;
+        top:25px;
+        left: 25px;
+    }
+    #about .container .row {
+        display: flex;
+        position: relative;
+        flex-direction: column;
+        left: -55px;
+    }
+
+    #contact .container .row {
+        display: flex;
+        flex-direction: column;
+    }
+
+    #about .container .row .row-col-1 img {
+        width: 300px;
+        height: 300px;
+    }
+
+    #about .container .row .row-col-2 h1 {
+        font-size: 35px;
+        padding: 12px 12px;
+    }
+
+    #about .container .row .row-col-2 .pa {
+        font-size: 18px;
+        width: 100%;
+        padding: 10px 10px;
+    }
+
+    #about .container .row .row-col-2 .sub-titles {
+        margin-left: 10px;
+        margin-right: -10px;
+    }
+
+    #about .container .row .row-col-2 .tab-contents {
+        margin-left: 10px;
+    }
+
+    #services .container {
+        margin-top: -60px;
+        position: relative;
+        left: -64px;
+    }
+
+    #services .container .h1 {
+        font-size: 35px;
+        padding-bottom: 10px;
+    }
+
+    #services .container .service-list .service {
+        width: 100%;
+        right: 10px;
+        position: relative;
+    }
+
+    #portoflio .container {
+        margin-top: -65px;
+        position: relative;
+        left: -64px;
+    }
+
+    #portoflio .container h1 {
+        font-size: 35px;
+        padding-bottom: 15px;
+    }
+
+    #portoflio .container .worklist .work {
+        width: 123%;
+        right: 8px;
+        position: relative;
+    }
+
+    #portoflio .container .btn {
+        left: -15px;
+        position: relative;
+    }
+
+    #contact{
+        position: relative;
+        left:-60px;
+        margin-top: -50px;
+    }
+    #contact .container .row .left h1{
+        font-size: 35px;
+    }
+    
+    #contact .container .row .left p{
+        display: flex;
+        position: relative;
+        align-items: center;
+        left:2px;
+    }
+
+    #contact .container .row .left p i{
+        font-size: 15px;        
+    }
+    #contact .container .row .left .btn2{
+        padding-bottom: 30px;
+        display: block;
+    }
+    form input,form textarea{
+        width: 140%; 
+    }
+    #contact .copyright{
+        display: flex;
+        position: absolute;
+        justify-content: center;
+        width: 100%;
+        align-items: center;
+        text-align: center;
+        padding-bottom: 50px;
+        margin: 30px;
+    }
+
+}

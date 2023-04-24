@@ -1,0 +1,219 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfoilo 😎</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/css/all.min.css" />
+</head>
+
+<body>
+    <!-----Home----->
+    <div id="header">
+        <div class="container">
+            <nav>
+                <img src="images/logo.png" class="nav-img">
+                <ul id = "sidemenu">
+                    <li><a href="#Header">Home</a></li>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#services">Services</a></li>
+                    <li><a href="#portoflio">Portoflio</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                    <i class="fas fa-times" onclick="closemenu()"></i>
+                </ul>
+                <i class="fas fa-bars" onclick="openmenu()"></i>
+            </nav>
+            <div class="header-text">
+                <p>UI/UX designer</p>
+                <h1>Hi, I am <span>Kevin</span> <br>Jen From Australia</h1>
+            </div>
+        </div>
+    </div>
+
+    <!------about------>
+    <div id="about">
+        <div class="container">
+            <div class="row">
+                <div class="row-col-1">
+                    <img src="images/user.png" class="about-img">
+                </div>
+                <div class="row-col-2">
+                    <h1>About Me</h1>
+                    <p class="pa">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Placeat quas possimus explicabo
+                        dignissimos est hic consequuntur culpa voluptas, nesciunt, exercitationem atque. Quibusdam nobis
+                        minima officia temporibus modi laborum a vel?
+                        Ducimus eaque, delectus quis debitis consequatur culpa ab asperiores officiis excepturi quae
+                        dolore quaerat repellat quasi sed molestiae facilis voluptatibus laboriosam tempore consequuntur
+                        eum? Ducimus sunt provident perferendis neque autem.
+                        Animi, neque est similique doloremque </p>
+                    <div class="sub-titles">
+                        <p class="tab-links skills active-link" onclick="opentab('skills')">Skills</p>
+                        <p class="tab-links experience" onclick="opentab('experience')">Experience</p>
+                        <p class="tab-links education" onclick="opentab('education')">Education</p>
+                    </div>
+                    <div class="tab-contents">
+                        <ul class="tc active-tab" id="skills">
+                            <li><span>UI/UX</span><br>Designing Web/App Interfaces</li>
+                            <li><span>UI/UX</span><br>Designing Web/App Interfaces</li>
+                        </ul>
+                        <ul class="tc" id="experience">
+                            <li><span>Web development</span><br>Web app Development</li>
+                            <li><span>App development</span><br>Building Android/IOS apps</li>
+                        </ul>
+                        <ul class="tc" id="education">
+                            <li><span>Web development</span><br>Web app Development</li>
+                            <li><span>UI/UX</span><br>Designing Web/App Interfaces</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!------Services------->
+    <div id="services">
+        <div class="container">
+            <h1 class="h1">My Services</h1>
+            <div class="service-list">
+                <div class="service">
+                    <i class="fas fa-code"></i>
+                    <h1>Web</h1>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Expedita optio repellat alias natus
+                        accusantium molestiae, quidem, enim quibusdam vero reprehenderit voluptates placeat eius quae
+                        nesciunt porro voluptatem labore, itaque nihil!</p>
+                    <br>
+                    <a href="">Learn More</a>
+                </div>
+                <div class="service">
+                    <i class="fas fa-crop-alt"></i>
+                    <h1>App</h1>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Expedita optio repellat alias natus
+                        accusantium molestiae, quidem, enim quibusdam vero reprehenderit voluptates placeat eius quae
+                        nesciunt porro voluptatem labore, itaque nihil!</p>
+                    <br>
+                    <a href="">Learn More</a>
+                </div>
+                <div class="service">
+                    <i class="fab fa-app-store"></i>
+                    <h1>ML</h1>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Expedita optio repellat alias natus
+                        accusantium molestiae, quidem, enim quibusdam vero reprehenderit voluptates placeat eius quae
+                        nesciunt porro voluptatem labore, itaque nihil!</p>
+                    <br>
+                    <a href="">Learn More</a>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div id="portoflio">
+        <div class="container">
+            <h1>My Work</h1>
+            <div class="worklist">
+                <div class="work">
+                    <img src="images/work-1.png" alt="">
+                    <div class="layer">
+                        <h2>Social Media App</h2>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugiat soluta am</p>
+                        <a href=""><i class="fas fa-external-link-alt"></i></a>
+                    </div>
+                </div>
+                <div class="work">
+                    <img src="images/work-2.png" alt="">
+                    <div class="layer">
+                        <h2>Social Media App</h2>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugiat soluta am</p>
+                        <a href=""><i class="fas fa-external-link-alt"></i></a>
+                    </div>
+                </div>
+                <div class="work">
+                    <img src="images/work-3.png" alt="">
+                    <div class="layer">
+                        <h2>Social Media App</h2>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugiat soluta am</p>
+                        <a href=""><i class="fas fa-external-link-alt"></i></a>
+                    </div>
+                </div>
+            </div>
+            <a href="" class="btn">See More</a>
+        </div>
+    </div>
+
+    <!------------Contact-------------->
+    <div id="contact">
+        <div class="container">
+            <div class="row">
+                <div class="left">
+                    <h1>Contact Us</h1>
+                    <p><i class="fas fa-paper-plane"></i>  Contact@example.com</p>
+                    <p><i class="fas fa-phone-square-alt"></i>  0123456789</p>
+                    <div class="social-icons">
+                        <a href=""><i class="fab fa-facebook"></i></a>
+                        <a href=""><i class="fab fa-twitter-square"></i></a>
+                        <a href=""><i class="fab fa-instagram"></i></a>
+                        <a href=""><i class="fab fa-linkedin"></i></a>
+                    </div>
+                    <a href="images/CV_Saikiran_Nuthanaganti.pdf" class="btn2">Download CV</a>
+                </div>
+                <div class="right">
+                    <form name="submit-to-google-sheet">
+                        <input type="text" name="Name" id="" placeholder="Your Name" required>
+                        <input type="email" name="Email" placeholder="Your Email" required>
+                        <textarea name="Message" id="" placeholder="Your Message" rows="7"></textarea>
+                        <button class="btn3">Submit</button>
+                    </form>
+                    <p id="msg"></p>
+                </div>
+            </div>
+        </div>
+        <div class="copyright">
+            <p>Copyright C Kevin. Made By Easy Tutorials</p>
+        </div>
+    </div>
+    <script>
+        var tablinks = document.getElementsByClassName("tab-links")
+        var tabcontents = document.getElementsByClassName("tc")
+
+        function opentab(tabname) {
+            for (tablink of tablinks)
+                tablink.classList.remove('active-link')
+            for (tabcontent of tabcontents)
+                tabcontent.classList.remove('active-tab')
+            document.getElementById(tabname).classList.add('active-tab')
+            event.currentTarget.classList.add('active-link')
+        }
+    </script>
+    <script>
+        const scriptURL = 'https://script.google.com/macros/s/AKfycbwDmR9CEOVVEPR4rKJXGrmxjX7lLx_sSVtooTjcaJlI-kpkJNjQXwQfTxTvJxuyNGijKQ/exec'
+        const form = document.forms['submit-to-google-sheet']
+        const m = document.getElementById("msg")
+
+        form.addEventListener('submit', e => {
+          e.preventDefault()
+          fetch(scriptURL, { method: 'POST', body: new FormData(form)})
+            .then(response => {
+                m.innerHTML = "Message sent Successfully"
+                setTimeout(() => {
+                    m.innerHTML=""
+                }, 5000);
+                form.reset()
+            })
+            .catch(error => console.error('Error!', error.message))
+        })
+      </script>
+      <script>
+        var sidemenu = document.getElementById("sidemenu")
+        function openmenu(){
+            sidemenu.style.right = "0"
+        }
+        function closemenu()
+        {
+            sidemenu.style.right="-200px"
+        }
+      </script>
+</body>
+
+</html>
